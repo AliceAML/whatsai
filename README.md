@@ -1,2 +1,3 @@
 # whatsai
-Web app that generates messages from WhatsApp conversations
+Web app qui génère des messages à partir de conversations WhatsApp
+https://whatsai.herokuapp.com/
