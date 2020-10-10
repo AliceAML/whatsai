@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block head %} {% endblock %}
+{% block body %}
+    <hr>
+    {{ phrase }}
+    <form action="/new" method="post">
+        <br>
+        <input type="submit" value="Nouvelle phrase">
+    </form>
+
+
+{% endblock %}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WhatsAI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/main.css') }}" >
+    {% block head %} {% endblock %}
+</head>
+<body>
+    <main>
+        <h1><a href="/">WhatsAI</a> <img src="../static/robot_1f916.png" height="50"><img src="../static/speech-balloon_1f4ac.png" height="50"></h1>
+        {% block body %} {% endblock %}
+    </main>
+
+</body>
+</html>
