@@ -4,7 +4,7 @@ from random import sample
 import os
 from whatsapp_cleanup import whatsapp_clean
 
-UPLOAD_FOLDER = "./uploads"
+UPLOAD_FOLDER = "."
 ALLOWED_EXTENSIONS = {'txt'}
 
 app = Flask(__name__)
