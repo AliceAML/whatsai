@@ -7,9 +7,13 @@
     {% block head %} {% endblock %}
 </head>
 <body>
-    <main>
+    <header>
         <h1><a href="/">WhatsAI</a> <img src="../static/robot_1f916.png" height="50"><img src="../static/speech-balloon_1f4ac.png" height="50"></h1>
-        {% block body %} {% endblock %}
+    </header>
+    <main>
+        <div class="texte">
+            {% block body %} {% endblock %}
+        </div>
     </main>
 
 </body>

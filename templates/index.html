@@ -4,18 +4,20 @@
 {% endblock %}
 
 {% block body %}
-    <p>Génère automatiquement des messages de tes amis !</p>
-    <hr>
-    <ol>
-        <li>Télécharge ta conversation WhatsApp (<a href="https://faq.whatsapp.com/android/chats/how-to-save-your-chat-history/?lang=fr">comment faire ?</a>).</li>
-        <li>Extrait l'archive.</li>
-        <li>Sélectionne ci-dessous le fichier texte de la conversation WhatsApp à partir de laquelle tu veux générer des messages (_chat.txt).</li>
-</li>
-    </ol>
-    <br>
-    <form action="/results" method="post" enctype=multipart/form-data>
-        <input name="file" placeholder="Name" type="file">
-        <input type="submit" value="Générer">
-    </form>
+    <div>
+        <p>Génère automatiquement des messages de tes amis !</p>
+        <hr>
+        <ol>
+            <li>Télécharge ta conversation WhatsApp (<a href="https://faq.whatsapp.com/android/chats/how-to-save-your-chat-history/?lang=fr">comment faire ?</a>).</li>
+            <li>Extrait l'archive.</li>
+            <li>Sélectionne ci-dessous le fichier texte de la conversation WhatsApp à partir de laquelle tu veux générer des messages (_chat.txt).</li>
+    </li>
+        </ol>
+        <br>
+        <form action="/results" method="post" enctype=multipart/form-data>
+            <input name="file" placeholder="Name" type="file">
+            <input type="submit" value="Générer">
+        </form>
+    </div>
 
 {% endblock %}
