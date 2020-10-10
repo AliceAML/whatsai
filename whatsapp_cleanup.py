@@ -23,5 +23,5 @@ def remove_timestamps(corpus) :
 
 def remove_missing_files(corpus):
     pattern = r"\n.+(image absente|document manquant|vidéo absente|GIF retiré)"
-    clean = re.sub(pattern, "test", corpus)
+    clean = re.sub(pattern, "", corpus)
     return clean
