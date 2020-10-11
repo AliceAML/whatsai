@@ -6,14 +6,15 @@ body {
     /*justify-content: center;*/
 }
 
-main {
+.texte {
     padding: 10px;
-    margin: 50px;
+    margin: 20px;
     border: 1px blueviolet solid;
     border-radius: 10px;
+    max-width: 800px;
 }
 
-.texte {
-    /*display: flex;*/
-    /*justify-content: center;*/
+header, footer, main {
+    display: flex;
+    justify-content: center;
 }
