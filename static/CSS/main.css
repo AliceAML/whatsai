@@ -18,3 +18,8 @@ header, footer, main {
     display: flex;
     justify-content: center;
 }
+
+h1 {
+    font-size: 1.5em;
+
+}

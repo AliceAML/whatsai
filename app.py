@@ -14,6 +14,8 @@ modele_lang = {}
 
 @app.route('/')
 def hello_world():
+    global modele_lang
+    modele_lang = {} # réinitialisation du modèle au chargement de la page d'accueil
     return render_template('index.html')
 
 @app.route('/results', methods=["GET","POST"])

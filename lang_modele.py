@@ -7,7 +7,7 @@ def modelisation(corpus):
 def generation_phrases(modele) :
     historique = ["BEGIN","NOW"]
     while (historique[-1] != "END"):
-        paire = f"{historique[-2]} {historique[-1]}"
+        paire = (historique[-2],historique[-1])
         historique.append(sample_from_discrete_distrib(modele[paire]))
     return historique
 
@@ -27,7 +27,7 @@ def proba_triplets(triplets):
     occur_paires = {} # pour compter les occurrences de ab, afin de calculer la fréquence
 
     for (a,b,c) in triplets :
-        paire = f'{a} {b}'
+        paire = (a,b)
         occur_paires[paire] = occur_paires.get(paire,0) + 1 # je décompte une occurrence supp de la paire
         proba[paire] = proba.get(paire, {}) # on crée un dictionnaire si nécessaire
         proba[paire][c] = proba[paire].get(c,0) + 1 
