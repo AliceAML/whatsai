@@ -54,7 +54,7 @@ def generate_sample():
         f.truncate(0) # on efface le contenu (au cas où)
         for i in range(1, 101):
             sentence = ' '.join(generation_phrases(modele_lang)).replace('BEGIN NOW ', '').replace(' END', '')
-            f.write(f"{i:04} {sentence}\n")
+            f.write(f"{i:03} {sentence}\n")
     with open('sample_whatsai.txt', "r") as f:
         result = f.read()
     response = make_response(result)
